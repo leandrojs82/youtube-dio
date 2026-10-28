@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Reprodução da página do YouTube do Desafio de Flexbox da DIO, feita em HTML e CSS.">
+  <title>Semana Front-end | DIO — YouTube</title>
+  <link rel="icon" href="assets/youtube.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="topbar">
+    <div class="brand-group">
+      <button class="icon-button" type="button" aria-label="Menu"><span class="menu-lines" aria-hidden="true"></span></button>
+      <a href="https://www.youtube.com/" aria-label="Página inicial do YouTube"><img class="youtube-logo" src="assets/youtube.png" width="90" height="20" alt="YouTube"></a>
+    </div>
+    <form class="search" action="https://www.youtube.com/results" method="get" role="search">
+      <input type="search" name="search_query" aria-label="Pesquisar no YouTube" autocomplete="off">
+      <button type="submit" aria-label="Pesquisar"><img src="assets/search-svg.svg" width="24" height="24" alt=""></button>
+    </form>
+    <div class="account-group">
+      <a class="icon-button" href="https://www.youtube.com/upload" aria-label="Criar vídeo"><img src="assets/video.svg" width="24" height="24" alt=""></a>
+      <button class="icon-button" type="button" aria-label="Notificações"><img src="assets/bell.svg" width="24" height="24" alt=""></button>
+      <img class="profile" src="assets/Avatar.svg" width="34" height="34" alt="Foto de perfil">
+    </div>
+  </header>
+
+  <main class="watch-layout" id="conteudo">
+    <section class="watch" aria-labelledby="video-title">
+      <!-- Imagem estática do vídeo, como no frame do Figma. -->
+      <img class="video-poster" src="assets/video-dio.png" width="952" height="537" alt="Tela do vídeo da Semana Front-end com a marca dio.me sobre fundo preto">
+      <h1 id="video-title">Semana Front-end | Dia 01: Construindo uma Landing Page no Mundo Invertido com HTML e CSS</h1>
+      <div class="video-actions">
+        <a class="channel" href="https://www.youtube.com/@diomakethechange">
+          <img src="assets/Channel_Avatar.svg" width="42" height="42" alt="Canal DIO">
+          <span class="channel-text"><strong>DIO</strong><span>83,3 mil inscritos</span></span>
+        </a>
+        <button class="subscribe" type="button">Inscreva-se</button>
+        <button class="action" type="button" aria-label="Gostei: 2 mil"><img src="assets/thumbs-up.svg" width="24" height="24" alt=""><span>2 mil</span></button>
+        <button class="action" type="button"><img src="assets/thumbs-down.svg" width="24" height="24" alt=""><span>Não gostei</span></button>
+        <button class="action" type="button"><img src="assets/share-2.svg" width="24" height="24" alt=""><span>Compartilhar</span></button>
+        <button class="action" type="button"><img src="assets/download.svg" width="24" height="24" alt=""><span>Download</span></button>
+      </div>
+      <p class="views">28.418 visualizações &nbsp;Transmitido ao vivo em 23 ago. de 2022</p>
+      <p class="description">Inicie uma aventura imersiva no mundo do Front-end com HTML e CSS. Para isso, criaremos uma landing page com a temática da série Stranger Things, a qual contará com a implementação de um theme switcher (light e dark) para explorarmos os mistérios do mundo invertido.</p>
+    </section>
+
+    <aside class="recommendations" aria-label="Vídeos recomendados">
+      <a class="recommendation" href="https://www.youtube.com/results?search_query=Gera%C3%A7%C3%A3o%20Tech%20Unimed%20-%20BH%20-%20Ci%C3%AAncia%20de%20Dados%20DIO">
+        <img class="thumbnail" src="assets/Thumb.png" width="160" height="90" alt="" loading="lazy">
+        <div class="recommendation-text">
+          <h2>Geração Tech Unimed - BH - Ciência de Dados</h2>
+          <p>DigitalInnovationOne</p>
+          <p>2,1 mil visualizações<br>Transmitido há 2 dias</p>
+        </div>
+      </a>
+      <a class="recommendation" href="https://www.youtube.com/results?search_query=Scrum%20Talks%20DIO">
+        <img class="thumbnail" src="assets/image 12.png" width="160" height="90" alt="" loading="lazy">
+        <div class="recommendation-text">
+          <h2>Scrum Talks</h2>
+          <p>DigitalInnovationOne</p>
+          <p>1,6 mil visualizações<br>Transmitido há 3 dias</p>
+        </div>
+      </a>
+      <a class="recommendation" href="https://www.youtube.com/results?search_query=Machine%20Learning%20Avan%C3%A7ado%20-%20Fast%20Track%20DIO">
+        <img class="thumbnail" src="assets/image 13.png" width="160" height="90" alt="" loading="lazy">
+        <div class="recommendation-text">
+          <h2>Machine Learning Avançado - Fast Track</h2>
+          <p>DigitalInnovationOne</p>
+          <p>1,7 mil visualizações<br>Transmitido há 4 dias</p>
+        </div>
+      </a>
+      <a class="recommendation" href="https://www.youtube.com/results?search_query=Global%20Skills%20%232%20-%20Project%20Planning%20DIO">
+        <img class="thumbnail" src="assets/image 14.png" width="160" height="90" alt="" loading="lazy">
+        <div class="recommendation-text">
+          <h2>Global Skills #2 - Project Planning</h2>
+          <p>DigitalInnovationOne</p>
+          <p>971 visualizações<br>Transmitido há 5 dias</p>
+        </div>
+      </a>
+      <a class="recommendation" href="https://www.youtube.com/results?search_query=Como%20aprender%20a%20programar%20Python%20do%20ZERO%20DIO">
+        <img class="thumbnail" src="assets/image 15.png" width="160" height="90" alt="" loading="lazy">
+        <div class="recommendation-text">
+          <h2>Como aprender a programar Python do ZERO</h2>
+          <p>DigitalInnovationOne</p>
+          <p>711 visualizações<br>Transmitido há 6 dias</p>
+        </div>
+      </a>
+      <a class="recommendation" href="https://www.youtube.com/results?search_query=Gera%C3%A7%C3%A3o%20Tech%20Unimed%20-%20BH%20-%20Ci%C3%AAncia%20de%20Dados%20DIO">
+        <img class="thumbnail" src="assets/Thumb.png" width="160" height="90" alt="" loading="lazy">
+        <div class="recommendation-text">
+          <h2>Geração Tech Unimed - BH - Ciência de Dados</h2>
+          <p>DigitalInnovationOne</p>
+          <p>2,1 mil visualizações<br>Transmitido há 2 dias</p>
+        </div>
+      </a>
+      <a class="recommendation" href="https://www.youtube.com/results?search_query=Scrum%20Talks%20DIO">
+        <img class="thumbnail" src="assets/image 12.png" width="160" height="90" alt="" loading="lazy">
+        <div class="recommendation-text">
+          <h2>Scrum Talks</h2>
+          <p>DigitalInnovationOne</p>
+          <p>1,6 mil visualizações<br>Transmitido há 3 dias</p>
+        </div>
+      </a>
+      <a class="recommendation" href="https://www.youtube.com/results?search_query=Machine%20Learning%20Avan%C3%A7ado%20-%20Fast%20Track%20DIO">
+        <img class="thumbnail" src="assets/image 13.png" width="160" height="90" alt="" loading="lazy">
+        <div class="recommendation-text">
+          <h2>Machine Learning Avançado - Fast Track</h2>
+          <p>DigitalInnovationOne</p>
+          <p>1,7 mil visualizações<br>Transmitido há 4 dias</p>
+        </div>
+      </a>
+      <a class="recommendation" href="https://www.youtube.com/results?search_query=Global%20Skills%20%232%20-%20Project%20Planning%20DIO">
+        <img class="thumbnail" src="assets/image 14.png" width="160" height="90" alt="" loading="lazy">
+        <div class="recommendation-text">
+          <h2>Global Skills #2 - Project Planning</h2>
+          <p>DigitalInnovationOne</p>
+          <p>971 visualizações<br>Transmitido há 5 dias</p>
+        </div>
+      </a>
+      <a class="recommendation" href="https://www.youtube.com/results?search_query=Como%20aprender%20a%20programar%20Python%20do%20ZERO%20DIO">
+        <img class="thumbnail" src="assets/image 15.png" width="160" height="90" alt="" loading="lazy">
+        <div class="recommendation-text">
+          <h2>Como aprender a programar Python do ZERO</h2>
+          <p>DigitalInnovationOne</p>
+          <p>711 visualizações<br>Transmitido há 6 dias</p>
+        </div>
+      </a>
+    </aside>
+  </main>
+</body>
+</html>

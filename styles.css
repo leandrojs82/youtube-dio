@@ -1,0 +1,331 @@
+@font-face{
+  font-family:Roboto;
+  src:url('assets/fonts/roboto-400.ttf') format('truetype');
+  font-weight:400;
+  font-display:swap}
+  @font-face{
+    font-family:Roboto;
+    src:url('assets/fonts/roboto-500.ttf') format('truetype');
+    font-weight:500;
+    font-display:swap}
+    @font-face{
+      font-family:Roboto;
+      src:url('assets/fonts/roboto-700.ttf') format('truetype');
+      font-weight:700;
+      font-display:swap}
+      :root{
+        color-scheme:light;
+        --page:#f9f9f9;
+        --text:#000;
+        --muted:#515151;
+        --red:#c00}
+        *{
+          box-sizing:border-box}
+          body{
+            margin:0;
+            background:var(--page);
+            color:var(--text);
+            font-family:Roboto,Arial,sans-serif}
+            button,input{
+              font:inherit}
+              button{
+                color:inherit;
+                cursor:pointer}
+                a{
+                  color:inherit;
+                  text-decoration:none}
+                  img{
+                    display:block;
+                    max-width:100%}
+                    :focus-visible{
+                      outline:2px solid #065fd4;
+                      outline-offset:4px}
+                      .skip-link{
+                        position:fixed;
+                        top:-80px;
+                        left:16px;
+                        padding:12px;
+                        background:white;
+                        z-index:5}
+                        .skip-link:focus{
+                          top:8px}
+                          /* Cabeçalho: marca, busca e conta distribuídos com Flexbox. */
+                          .topbar{
+                            height:56px;
+                            padding:0 24px;
+                            display:flex;
+                            align-items:center;
+                            justify-content:space-between;
+                            gap:32px;
+                            background:#fff}
+                            .brand-group,.account-group{
+                              display:flex;
+                              align-items:center;
+                              gap:24px;
+                              flex-shrink:0}
+                              .icon-button{
+                                display:flex;
+                                align-items:center;
+                                justify-content:center;
+                                width:24px;
+                                height:32px;
+                                padding:0;
+                                border:0;
+                                background:transparent}
+                                .icon-button img{
+                                  width:24px;
+                                  height:24px}
+                                  .menu-lines{
+                                    width:18px;
+                                    height:2px;
+                                    background:#000;
+                                    box-shadow:0 -6px #000,0 6px #000}
+                                    .youtube-logo{
+                                      width:90px;
+                                      height:20px;
+                                      object-fit:contain}
+                                      .search{
+                                        display:flex;
+                                        height:40px;
+                                        width:404px;
+                                        margin-left:32px}
+                                        .search input{
+                                          min-width:0;
+                                          width:100%;
+                                          border:1px solid #ccc;
+                                          border-right:0;
+                                          background:white;
+                                          padding:0 12px;
+                                          border-radius:0}
+                                          .search input:focus{
+                                            outline:1px solid #065fd4;
+                                            outline-offset:-1px}
+                                            .search button{
+                                              width:57px;
+                                              flex-shrink:0;
+                                              display:flex;
+                                              align-items:center;
+                                              justify-content:center;
+                                              border:1px solid #ccc;
+                                              background:#f8f8f8}
+                                              .search button img{
+                                                width:24px;
+                                                height:24px}
+                                                .profile{
+                                                  width:34px;
+                                                  height:34px;
+                                                  border-radius:50%}
+                                                  /* O vídeo ocupa o espaço livre;
+                                                  as recomendações mantêm a largura da referência. */
+                                                  .watch-layout{
+                                                    display:flex;
+                                                    align-items:flex-start;
+                                                    gap:25px;
+                                                    max-width:1440px;
+                                                    margin:0 auto;
+                                                    padding:28px 16px 40px 75px}
+                                                    .watch{
+                                                      flex:1;
+                                                      min-width:0}
+                                                      .video-poster{
+                                                        width:100%;
+                                                        height:auto;
+                                                        aspect-ratio:952/537;
+                                                        object-fit:cover;
+                                                        background:#000}
+                                                        h1{
+                                                          margin:16px 0;
+                                                          font-size:20px;
+                                                          font-weight:700;
+                                                          line-height:1.2}
+                                                          .video-actions{
+                                                            display:flex;
+                                                            flex-wrap:wrap;
+                                                            align-items:center;
+                                                            justify-content:space-between;
+                                                            gap:16px;
+                                                            margin-bottom:16px}
+                                                            .channel{
+                                                              display:flex;
+                                                              align-items:center;
+                                                              gap:12px;
+                                                              flex-shrink:0}
+                                                              .channel>img{
+                                                                width:42px;
+                                                                height:42px;
+                                                                border-radius:50%}
+                                                                .channel-text{
+                                                                  display:flex;
+                                                                  flex-direction:column;
+                                                                  gap:3px;
+                                                                  font-size:14px;
+                                                                  white-space:nowrap}
+                                                                  .channel-text strong{
+                                                                    font-weight:700}
+                                                                    .channel-text span{
+                                                                      color:var(--muted)}
+                                                                      .subscribe{
+                                                                        display:flex;
+                                                                        align-items:center;
+                                                                        justify-content:center;
+                                                                        min-height:40px;
+                                                                        min-width:159px;
+                                                                        padding:0 18px;
+                                                                        border:0;
+                                                                        border-radius:2px;
+                                                                        background:var(--red);
+                                                                        color:#fff;
+                                                                        text-transform:uppercase;
+                                                                        font-size:14px;
+                                                                        font-weight:500}
+                                                                        .action{
+                                                                          display:flex;
+                                                                          align-items:center;
+                                                                          justify-content:center;
+                                                                          gap:8px;
+                                                                          padding:0;
+                                                                          border:0;
+                                                                          background:transparent;
+                                                                          white-space:nowrap;
+                                                                          font-size:14px;
+                                                                          font-weight:500;
+                                                                          min-height:40px}
+                                                                          .action img{
+                                                                            width:24px;
+                                                                            height:24px;
+                                                                            flex-shrink:0}
+                                                                            .views{
+                                                                              margin:0 0 16px;
+                                                                              font-size:14px;
+                                                                              font-weight:700;
+                                                                              line-height:1.3}
+                                                                              .description{
+                                                                                max-width:510px;
+                                                                                margin:0;
+                                                                                color:var(--muted);
+                                                                                font-size:14px;
+                                                                                line-height:1.2}
+                                                                                .recommendations{
+                                                                                  display:flex;
+                                                                                  flex-direction:column;
+                                                                                  gap:16px;
+                                                                                  flex:0 0 372px}
+                                                                                  .recommendation{
+                                                                                    display:flex;
+                                                                                    align-items:flex-start;
+                                                                                    gap:16px;
+                                                                                    min-width:0}
+                                                                                    .thumbnail{
+                                                                                      width:160px;
+                                                                                      height:90px;
+                                                                                      flex-shrink:0;
+                                                                                      object-fit:cover}
+                                                                                      .recommendation-text{
+                                                                                        display:flex;
+                                                                                        flex-direction:column;
+                                                                                        align-items:flex-start;
+                                                                                        gap:7px;
+                                                                                        min-width:0}
+                                                                                        .recommendation h2{
+                                                                                          margin:0;
+                                                                                          font-size:14px;
+                                                                                          line-height:1.2;
+                                                                                          font-weight:700}
+                                                                                          .recommendation p{
+                                                                                            margin:0;
+                                                                                            font-size:12px;
+                                                                                            line-height:1.2;
+                                                                                            color:var(--muted)}
+                                                                                            .recommendation:hover h2{
+                                                                                              color:#065fd4}
+                                                                                              .action:hover,.icon-button:hover{
+                                                                                                opacity:.65}
+                                                                                                .subscribe:hover{
+                                                                                                  background:#b00000}
+                                                                                                  .search button:hover{
+                                                                                                    background:#eee}
+                                                                                                    @media(max-width:1280px){
+                                                                                                      .watch-layout{
+                                                                                                        padding-left:32px;
+                                                                                                        padding-right:24px}
+                                                                                                        .recommendations{
+                                                                                                          flex-basis:330px}
+                                                                                                          .video-actions{
+                                                                                                            justify-content:flex-start;
+                                                                                                            flex-wrap:wrap;
+                                                                                                            column-gap:24px;
+                                                                                                            row-gap:8px}
+                                                                                                          }
+                                                                                                          @media(max-width:1000px){
+                                                                                                            .watch-layout{
+                                                                                                              flex-direction:column;
+                                                                                                              gap:32px;
+                                                                                                              padding:24px}
+                                                                                                              .watch,.recommendations{
+                                                                                                                width:100%}
+                                                                                                                .recommendations{
+                                                                                                                  flex-basis:auto}
+                                                                                                                  .video-actions{
+                                                                                                                    column-gap:24px}
+                                                                                                                    .recommendation-text{
+                                                                                                                      max-width:360px}
+                                                                                                                    }
+                                                                                                                    @media(max-width:600px){
+                                                                                                                      .topbar{
+                                                                                                                        height:auto;
+                                                                                                                        min-height:56px;
+                                                                                                                        padding:12px 16px;
+                                                                                                                        gap:12px;
+                                                                                                                        flex-wrap:wrap}
+                                                                                                                        .brand-group,.account-group{
+                                                                                                                          gap:16px}
+                                                                                                                          .search{
+                                                                                                                            order:3;
+                                                                                                                            width:100%;
+                                                                                                                            margin:0;
+                                                                                                                            height:36px}
+                                                                                                                            .watch-layout{
+                                                                                                                              padding:16px 0 32px;
+                                                                                                                              gap:28px}
+                                                                                                                              h1{
+                                                                                                                                margin:16px;
+                                                                                                                                font-size:18px;
+                                                                                                                                line-height:1.35}
+                                                                                                                                .video-actions{
+                                                                                                                                  margin:0 16px 16px;
+                                                                                                                                  gap:8px 20px}
+                                                                                                                                  .channel{
+                                                                                                                                    margin-right:auto}
+                                                                                                                                    .channel-text{
+                                                                                                                                      font-size:13px}
+                                                                                                                                      .subscribe{
+                                                                                                                                        min-width:120px;
+                                                                                                                                        padding:0 12px;
+                                                                                                                                        font-size:12px}
+                                                                                                                                        .action{
+                                                                                                                                          font-size:12px;
+                                                                                                                                          gap:6px}
+                                                                                                                                          .action img{
+                                                                                                                                            width:22px;
+                                                                                                                                            height:22px}
+                                                                                                                                            .views,.description{
+                                                                                                                                              margin-left:16px;
+                                                                                                                                              margin-right:16px;
+                                                                                                                                              font-size:13px;
+                                                                                                                                              line-height:1.4}
+                                                                                                                                              .recommendations{
+                                                                                                                                                padding:0 16px}
+                                                                                                                                                .recommendation{
+                                                                                                                                                  gap:12px}
+                                                                                                                                                  .thumbnail{
+                                                                                                                                                    width:44%;
+                                                                                                                                                    max-width:160px;
+                                                                                                                                                    height:auto;
+                                                                                                                                                    aspect-ratio:16/9}
+                                                                                                                                                    .recommendation h2{
+                                                                                                                                                      font-size:13px}
+                                                                                                                                                      .recommendation-text{
+                                                                                                                                                        gap:6px}
+                                                                                                                                                        .recommendation p{
+                                                                                                                                                          font-size:11px}
+                                                                                                                                                        }
